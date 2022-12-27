@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		817CA0AE295B17B00006C248 /* BlanckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0AD295B17B00006C248 /* BlanckView.swift */; };
+		817CA0B1295B30730006C248 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0B0295B30730006C248 /* ListRowItemView.swift */; };
+		817CA0B3295B8A060006C248 /* ToggleCustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0B2295B8A060006C248 /* ToggleCustomStyle.swift */; };
+		817CA0B5295B96B60006C248 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817CA0B4295B96B60006C248 /* PlaySound.swift */; };
 		81E8B97A2959ED4500DE14AC /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8B9792959ED4500DE14AC /* DevoteApp.swift */; };
 		81E8B97C2959ED4500DE14AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8B97B2959ED4500DE14AC /* ContentView.swift */; };
 		81E8B97E2959ED4600DE14AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E8B97D2959ED4600DE14AC /* Assets.xcassets */; };
 		81E8B9812959ED4600DE14AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E8B9802959ED4600DE14AC /* Preview Assets.xcassets */; };
 		81E8B9832959ED4600DE14AC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8B9822959ED4600DE14AC /* Persistence.swift */; };
 		81E8B9862959ED4600DE14AC /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81E8B9842959ED4600DE14AC /* Devote.xcdatamodeld */; };
+		81E8B98F2959EDC200DE14AC /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81E8B98C2959EDC200DE14AC /* sound-tap.mp3 */; };
+		81E8B9902959EDC200DE14AC /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81E8B98D2959EDC200DE14AC /* sound-ding.mp3 */; };
+		81E8B9912959EDC200DE14AC /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81E8B98E2959EDC200DE14AC /* sound-rise.mp3 */; };
+		81E8B997295A060C00DE14AC /* PlaceHolderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8B996295A060C00DE14AC /* PlaceHolderStyle.swift */; };
+		81E8B99C295A255200DE14AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8B99B295A255200DE14AC /* Constants.swift */; };
+		81E8B99F295A2F5300DE14AC /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8B99E295A2F5300DE14AC /* BackgroundImageView.swift */; };
+		81E8B9A1295A356700DE14AC /* AddNewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8B9A0295A356700DE14AC /* AddNewTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		817CA0AD295B17B00006C248 /* BlanckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlanckView.swift; sourceTree = "<group>"; };
+		817CA0B0295B30730006C248 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		817CA0B2295B8A060006C248 /* ToggleCustomStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleCustomStyle.swift; sourceTree = "<group>"; };
+		817CA0B4295B96B60006C248 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		81E8B9762959ED4500DE14AC /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E8B9792959ED4500DE14AC /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
 		81E8B97B2959ED4500DE14AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +38,14 @@
 		81E8B9802959ED4600DE14AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81E8B9822959ED4600DE14AC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		81E8B9852959ED4600DE14AC /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
+		81E8B98C2959EDC200DE14AC /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		81E8B98D2959EDC200DE14AC /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		81E8B98E2959EDC200DE14AC /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		81E8B9952959EE3B00DE14AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		81E8B996295A060C00DE14AC /* PlaceHolderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderStyle.swift; sourceTree = "<group>"; };
+		81E8B99B295A255200DE14AC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		81E8B99E295A2F5300DE14AC /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		81E8B9A0295A356700DE14AC /* AddNewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		817CA0AF295B30560006C248 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				817CA0B2295B8A060006C248 /* ToggleCustomStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
 		81E8B96D2959ED4500DE14AC = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +86,15 @@
 		81E8B9782959ED4500DE14AC /* Devote */ = {
 			isa = PBXGroup;
 			children = (
-				81E8B9792959ED4500DE14AC /* DevoteApp.swift */,
-				81E8B97B2959ED4500DE14AC /* ContentView.swift */,
+				817CA0AF295B30560006C248 /* Style */,
+				81E8B99D295A2F3D00DE14AC /* View */,
+				81E8B99A295A253500DE14AC /* Utils */,
+				81E8B999295A084600DE14AC /* Modifier */,
+				81E8B9932959EDF200DE14AC /* App */,
+				81E8B9922959EDCB00DE14AC /* Sounds */,
+				81E8B9942959EDFB00DE14AC /* Model */,
 				81E8B97D2959ED4600DE14AC /* Assets.xcassets */,
-				81E8B9822959ED4600DE14AC /* Persistence.swift */,
-				81E8B9842959ED4600DE14AC /* Devote.xcdatamodeld */,
+				81E8B9952959EE3B00DE14AC /* Info.plist */,
 				81E8B97F2959ED4600DE14AC /* Preview Content */,
 			);
 			path = Devote;
@@ -71,6 +106,62 @@
 				81E8B9802959ED4600DE14AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81E8B9922959EDCB00DE14AC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				81E8B98D2959EDC200DE14AC /* sound-ding.mp3 */,
+				81E8B98E2959EDC200DE14AC /* sound-rise.mp3 */,
+				81E8B98C2959EDC200DE14AC /* sound-tap.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		81E8B9932959EDF200DE14AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				81E8B9792959ED4500DE14AC /* DevoteApp.swift */,
+				81E8B97B2959ED4500DE14AC /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		81E8B9942959EDFB00DE14AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81E8B9822959ED4600DE14AC /* Persistence.swift */,
+				81E8B9842959ED4600DE14AC /* Devote.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81E8B999295A084600DE14AC /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				81E8B996295A060C00DE14AC /* PlaceHolderStyle.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		81E8B99A295A253500DE14AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				81E8B99B295A255200DE14AC /* Constants.swift */,
+				817CA0B4295B96B60006C248 /* PlaySound.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		81E8B99D295A2F3D00DE14AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81E8B99E295A2F5300DE14AC /* BackgroundImageView.swift */,
+				81E8B9A0295A356700DE14AC /* AddNewTaskView.swift */,
+				817CA0AD295B17B00006C248 /* BlanckView.swift */,
+				817CA0B0295B30730006C248 /* ListRowItemView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +222,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E8B9912959EDC200DE14AC /* sound-rise.mp3 in Resources */,
+				81E8B9902959EDC200DE14AC /* sound-ding.mp3 in Resources */,
+				81E8B98F2959EDC200DE14AC /* sound-tap.mp3 in Resources */,
 				81E8B9812959ED4600DE14AC /* Preview Assets.xcassets in Resources */,
 				81E8B97E2959ED4600DE14AC /* Assets.xcassets in Resources */,
 			);
@@ -143,10 +237,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E8B9A1295A356700DE14AC /* AddNewTaskView.swift in Sources */,
+				817CA0B5295B96B60006C248 /* PlaySound.swift in Sources */,
+				81E8B997295A060C00DE14AC /* PlaceHolderStyle.swift in Sources */,
+				81E8B99F295A2F5300DE14AC /* BackgroundImageView.swift in Sources */,
 				81E8B9832959ED4600DE14AC /* Persistence.swift in Sources */,
 				81E8B97C2959ED4500DE14AC /* ContentView.swift in Sources */,
+				817CA0AE295B17B00006C248 /* BlanckView.swift in Sources */,
+				817CA0B1295B30730006C248 /* ListRowItemView.swift in Sources */,
 				81E8B9862959ED4600DE14AC /* Devote.xcdatamodeld in Sources */,
+				817CA0B3295B8A060006C248 /* ToggleCustomStyle.swift in Sources */,
 				81E8B97A2959ED4500DE14AC /* DevoteApp.swift in Sources */,
+				81E8B99C295A255200DE14AC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +380,11 @@
 				DEVELOPMENT_TEAM = R555F6422X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Devote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,9 +392,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kvm.Devote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,11 +412,11 @@
 				DEVELOPMENT_TEAM = R555F6422X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Devote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,9 +424,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kvm.Devote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
