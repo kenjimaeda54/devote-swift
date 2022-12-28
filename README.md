@@ -256,7 +256,7 @@ private func deleteItems(offsets: IndexSet) {
 
 ```
 ## 
-- Por fim aprendi construí meus próprios estilos customizados para os componentes nativos que swift disponibiliza
+- Aprendi construí meus próprios estilos customizados para os componentes nativos que swift disponibiliza
 - Para aplicar um estilo customizado usamos  a propriedade Style, nesse caso era toggleStyle, dentro do sue construtor passo a função que criamos
 - Abaixo também tem um exemplo de modificador para placeholder 
 
@@ -329,4 +329,40 @@ struct PlaceHolderStyle: ViewModifier {
 
 
 ```
+
+##
+- Abaixo uma maenria de aletar uma propreidade de forma reativa usando ObservedObject e [onReceive](https://developer.apple.com/documentation/swiftui/view/onreceive(_:perform:)
+- Cada mudanca no toogle ele ira observara o Item se a propreidade foi de false para verdadeira,refletindo e salvando  no core data
+
+
+```swift
+struct ListRowItemView: View {
+	//MARK: - Properties
+	@Environment(\.managedObjectContext) var viewContext
+	@ObservedObject var item: Item
+	
+	var body: some View {
+		Toggle(isOn: $item.completion) {
+			Text(item.task ?? "")
+				.font(.system(.title2,design: .rounded))
+				.fontWeight(.bold)
+				.foregroundColor(item.completion ? .pink : Color.primary)
+				.padding(.vertical,12)
+		}
+		.toggleStyle(ToggleCustomStyle())
+		.onReceive(item.objectWillChange) { _ in
+			if self.viewContext.hasChanges {
+			  try?	self.viewContext.save()
+			}
+		}
+	
+	}//Toggle
+}
+
+```
+
+
+
+
+
 
