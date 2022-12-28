@@ -2,13 +2,12 @@
 Todo usando swiftUi e Core Data
 
 ## Feature
-- Para realizar requisicoes no core date usamos FetchedResultss
-- Como em UIKIT podemos criar nossos srotDescriptor
-- Para cabputar o contexto usamos o conceito do decorator Environment
-- Toda vez que usar essa propreidade precisamos com anotacao de ponto, chamaro environment no preview
-- Core data seu core continua igual em swift ui,precisamos chamar o contexto e salvar
-- Caso nao salvar no contexto nao ficara salvo de faot no core data apenas em seu sand box
-
+- Para realizar requisições no core date usamos FetchedResultss
+- Como em UIKIT podemos criar nossos sortDescriptor
+- Para capturar o contexto usamos o conceito do decorator Environment
+- Quando usa essa propriedade precisa no preview instancia com anotação de ponto
+- Core data seu core continua igual em UIkit em alguns requisitos, exemplo precisamos chamar o contexto e salvar
+- Caso não salvar no contexto não salvara no core data, apenas em seu sand box
 
 
 ```swift
@@ -48,11 +47,11 @@ struct ContentView_Previews: PreviewProvider {
 ```
 ##
 - Aprendi o uso do decordor [@Binding](https://jaredsinclair.com/2020/05/07/swiftui-cheat-sheet.html)
-- Esse decorator e util para fazer uma relacao de notificadao da screen antecessora com a sucessora
-- Quando a task for salva na screen AddNewTaskView vou alterar a proreidade na tela ContentView
-- Reapare qeu a screen AddNewTaskView e dinamica quando o state showButtonAddTask for verdadeiro ira mostrar a screen
-- Assim que a task for salava na screen AddNewTask farei atravez do bind alterar a proreidade do showButtonAddTask assim fechando novametne a screen que etava aberta
-- Sem essa relacao precisaria criar uma funcao ou outra altertiva para fazer essa comunicacao indireta entre filho e pai
+- Esse decorator e útil para fazer uma relação de notificação da screen antecessora com a sucessora
+- Quando a task for salva na screen AddNewTaskView vou alterar a propriedade na tela ContentView
+- Reapare que a screen AddNewTaskView e dinâmica quando o state showButtonAddTask for verdadeiro ira mostrar a screen
+- Apos  a task for salva na screen AddNewTask,  irei alterar a propriedade do showButtonAddTask  usando conceito de Binding fechando novamente a screen que estava aberta
+- Sem essa relação precisaria criar uma função ou outra alternativa para fazer essa comunicação indireta entre filho e pai
 
 ```swift
 
@@ -112,7 +111,7 @@ if showButtonAddTask {
 ```
 
 ## 
-- Outro decorator util e o [FocusState](https://www.hackingwithswift.com/quick-start/swiftui/how-to-dismiss-the-keyboard-for-a-textfield) com ele consigo fechar o teclado de um text field
+- Outro decorator útil e o [FocusState](https://www.hackingwithswift.com/quick-start/swiftui/how-to-dismiss-the-keyboard-for-a-textfield) com ele consigo fechar o teclado de um text field
 
 
 
@@ -158,8 +157,8 @@ func handleSubmit() {
 ```
 
 ##
-- Por fim aprendi aplicar um efeito bacana para ofuscar a tela de fundo 
-- Usamos a propreidade blendMode e blur
+- Aprendi aplicar um efeito bacana para ofuscar a tela de fundo 
+- Usamos a propriedade blendMode e blur
 
 ```swift
 
@@ -197,10 +196,9 @@ VStack {
 ```
 
 ##
-- Para construir um navigation bar de forma customizada e so remover o toolbar usando hidden
-- Existe um EditButton nativo do switUI para integarir com as lsitas
-- Nesse projeto ele estava acionando o metodo onDelete 
-
+- Para construir um navigation bar de forma customizada e só remover o toolbar usando hidden
+- Existe um EditButton nativo do switUI para interagir com as listas
+- Nesse projeto ele estava acionando o método onDelete 
 
 
 
@@ -258,9 +256,9 @@ private func deleteItems(offsets: IndexSet) {
 
 ```
 ## 
-- Por fim aprendi construi meus proprios esticulos costumizados para os componetnes nativos que swift disponibiliza
-- Para aplicar um estilo customizado e usar a proprieda Style, nesse caso toggleStyle, dentro do sue consturto passo a funcao que criamos
-- Abaixo tambem tem um exmeplo de modificador para placeholder 
+- Por fim aprendi construí meus próprios estilos customizados para os componentes nativos que swift disponibiliza
+- Para aplicar um estilo customizado usamos  a propriedade Style, nesse caso era toggleStyle, dentro do sue construtor passo a função que criamos
+- Abaixo também tem um exemplo de modificador para placeholder 
 
 
 ```swift
