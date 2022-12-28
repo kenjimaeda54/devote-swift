@@ -196,6 +196,67 @@ VStack {
 
 ```
 
+##
+- Para construir um navigation bar de forma customizada e so remover o toolbar usando hidden
+- Existe um EditButton nativo do switUI para integarir com as lsitas
+- Nesse projeto ele estava acionando o metodo onDelete 
+
+
+
+
+
+
+```swift
+//button nativo
+EditButton() //esse editButton e nativo do struct apos selecionar ira ativaro onDelete da list
+							.foregroundColor(.white)
+							.padding(.vertical,2)
+							.padding(.horizontal,20)
+							.background(
+								RoundedRectangle(cornerRadius: 12)
+									.stroke(Color.white,lineWidth: 2)
+								
+							)
+
+
+
+	List {
+						
+						ForEach(items) { item in
+							
+							VStack(alignment: .leading,spacing: 10){
+								
+								ListRowItemView(item: item)
+								
+							}
+							
+						}
+						.onDelete(perform: deleteItems)
+						
+	}
+	
+	
+	//delete
+	
+private func deleteItems(offsets: IndexSet) {
+		withAnimation {
+			offsets.map { items[$0] }.forEach(viewContext.delete)
+			
+			do {
+				try viewContext.save()
+			} catch {
+				let nsError = error as NSError
+				fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+			}
+		}
+	}
+}
+	
+
+
+
+
+```
 
 
 
