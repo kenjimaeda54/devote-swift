@@ -331,8 +331,8 @@ struct PlaceHolderStyle: ViewModifier {
 ```
 
 ##
-- Abaixo uma maenria de aletar uma propreidade de forma reativa usando ObservedObject e [onReceive](https://developer.apple.com/documentation/swiftui/view/onreceive(_:perform:)
-- Cada mudanca no toogle ele ira observara o Item se a propreidade foi de false para verdadeira,refletindo e salvando  no core data
+- Abaixo uma maneria de alterar uma propriedade d de forma reativa usando ObservedObject e [onReceive](https://developer.apple.com/documentation/swiftui/view/onreceive(_:perform:)
+- Caso ocorra mudança no Item através do toogle, por exemplo, a propriedade foi de false para verdadeira, ira refletir e salvar  no core data
 
 
 ```swift
