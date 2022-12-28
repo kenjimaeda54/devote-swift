@@ -257,6 +257,78 @@ private func deleteItems(offsets: IndexSet) {
 
 
 ```
+## 
+- Por fim aprendi construi meus proprios esticulos costumizados para os componetnes nativos que swift disponibiliza
+- Para aplicar um estilo customizado e usar a proprieda Style, nesse caso toggleStyle, dentro do sue consturto passo a funcao que criamos
+- Abaixo tambem tem um exmeplo de modificador para placeholder 
 
 
+```swift
+struct ToggleCustomStyle: ToggleStyle {
+		
+	func makeBody(configuration: Configuration) -> some View {
+		HStack(spacing: 7) {
+			Image(systemName: configuration.isOn ?  "checkmark.circle.fill" : "circle")
+				.foregroundColor(configuration.isOn ? .pink : Color.primary)
+				.font(.title2)
+			//precisa colcoar onTap ele ira assumir todo comportamento
+			//colocado aqui
+				.onTapGesture {
+					configuration.isOn.toggle()
+					
+					if configuration.isOn {
+						PlaySound.play(resource: "sound-rise", type: "mp3")
+						feedback.notificationOccurred(.success)
+					}else {
+						PlaySound.play(resource: "sound-tap", type: "mp3")
+						feedback.notificationOccurred(.success)
+					}
+					
+				}
+			//aqui sera o label
+			configuration.label
+				.font(.system(size: 23,weight: .bold,design: .rounded))
+				.foregroundColor(configuration.isOn ? .pink : .black)
+			
+		}// HStack
+		
+	}
+}
+
+struct ToggleStyle_Previews: PreviewProvider {
+	static var previews: some View {
+		Toggle("Is label", isOn: .constant(true))
+			.previewLayout(.sizeThatFits)
+			.toggleStyle(ToggleCustomStyle())
+	}
+}
+
+
+//modificador
+struct PlaceHolderStyle: ViewModifier {
+	let showPlaceHolder: Bool
+	let alignment: Alignment?
+	let text: String
+	let color: Color
+	
+	
+	func  body(content: Content) -> some View {
+		ZStack(alignment: alignment ?? .leading) {
+			if showPlaceHolder {
+				Text(text)
+					.foregroundColor(color)
+					.padding(10)
+			}
+			content
+				.padding(10)
+		}
+	}
+	
+}
+
+
+
+
+
+```
 
